@@ -127,26 +127,7 @@ function showUser(str) {
                     <div class="panel-body">
                        <h4>General</h4>
 					   <div id="general"></div>
-                        <p>
-						<?php if(isset($_POST['general']))
-	                    {
-		                        $query = "SELECT * from program_links where type = 'general' order by rating desc"; 
-	 
-	                         	$result = mysql_query($query) or die(mysql_error());
-
-	                            echo "<ul>";
-		                        while($row = mysql_fetch_array($result))
-						    {
-		
-	                            echo "<li>"."<a href='".$row['url']."'>". $row['name'] ."</li>";
-
-		
-	                        }
-	
-                        }
-                        echo "</ul>"; 
-                        ?>
-                       </p>             
+                                 
 					   
                      
                         <button type="submit" name="general" onclick="showUser(this.name)" class="btn btn-primary btn-lg btn-block">
