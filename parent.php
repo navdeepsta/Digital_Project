@@ -59,8 +59,7 @@ function showUser(str) {
 </head>
 
 <body>
-  <!-- <form action="parent.php" method="post"> -->
-  <!-- Database Connection -->
+
     
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -126,8 +125,8 @@ function showUser(str) {
         </div>
         <!-- /.row -->
 
-        <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        
+       
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header" style="color:#FF00FF">Information and Communication Technology</h2>
@@ -201,10 +200,7 @@ function showUser(str) {
         <!-- Service Tabs -->
         
 
-        <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-       
-        <!-- /.row -->
+        
 
         <hr>
 
@@ -218,7 +214,7 @@ function showUser(str) {
         </footer>
 
     </div>
-<!-- </form> -->
+
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.0 -->
