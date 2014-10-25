@@ -50,8 +50,6 @@ function showUser(str) {
 </head>
 
 <body>
-    <!-- <form action="teacher.php" method="post"> -->
-  <!-- Database Connection -->
   
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -117,8 +115,6 @@ function showUser(str) {
         </div>
         <!-- /.row -->
 
-        <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
          <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header" style="color:#FF00FF">Information and Communication Technology</h2>
@@ -169,28 +165,7 @@ function showUser(str) {
                     <div class="panel-body">
                         <h4>Women's Program</h4>
 						 <div id="women"></div>
-                        <p>
-						
-						<?php if(isset($_POST['women']))
-	                    {
-		                        $query = "SELECT * from program_links where type = 'women' order by rating desc"; 
-	 
-	                         	$result = mysql_query($query) or die(mysql_error());
-
-	                            echo "<ul>";
-		                        while($row = mysql_fetch_array($result))
-						    {
-		
-	                            echo "<li>"."<a href='".$row['url']."'>". $row['name'] ."</li>";
-
-		
-	                        }
-	
-                        }
-                        echo "</ul>";
-                        ?>
-						
-						</p>
+                       
                         <button type="submit" name="women" onclick="showUser(this.name)" class="btn btn-primary btn-lg btn-block">
                          Program for women
                        </button>
@@ -205,27 +180,7 @@ function showUser(str) {
                     <div class="panel-body">
                         <h4>Internship</h4>
 						 <div id="internship"></div>
-                        <p>
-						<?php if(isset($_POST['internship']))
-	                    {
-		                        $query = "SELECT * from program_links where type = 'internship' order by rating desc"; 
-	 
-	                         	$result = mysql_query($query) or die(mysql_error());
-
-	                            echo "<ul>";
-		                        while($row = mysql_fetch_array($result))
-						    {
-		
-	                            echo "<li>"."<a href='".$row['url']."'>". $row['name'] ."</li>";
-
-		
-	                        }
-	
-                        }
-                        echo "</ul>";
-                        ?>
-						
-						</p>
+                      
                         <button type="submit" name="internship" onclick="showUser(this.name)" class="btn btn-primary btn-lg btn-block">
                          Internships
                        </button>
@@ -291,8 +246,7 @@ function showUser(str) {
             </div>
         </div>
 
-        <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+      
       
         <!-- /.row -->
 
@@ -316,7 +270,7 @@ function showUser(str) {
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-					 <!--  </form> -->
+					
 					   
 
 
