@@ -41,7 +41,7 @@
 <input type="submit" name="submit" value="submit">
 </form>
 <?php
-echo "navdeep";
+
 $data = array();
 if(isset($_POST['submit'])){//to run PHP script on submit
 if(!empty($_POST['check_list'])){
@@ -78,7 +78,7 @@ if(isset($_POST['submit']))
 	   if($value == $row[0]){
 	   
 	     $rating = $row[2] + 1;
-		 echo $rating;
+		
 		 $tmp = $value;
 		 //echo $tmp;
 	     $updateQuery = "update program_links set rating = '".$rating."'" . "where name = '".$tmp."'";
